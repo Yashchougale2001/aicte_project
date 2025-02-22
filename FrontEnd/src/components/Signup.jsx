@@ -49,7 +49,7 @@ function Signup() {
         <Col md={5}>
           <div className="p-4 border rounded shadow-lg bg-white">
             <h2 className="text-center mb-4 text-primary">Signup</h2>
-            {error && <Alert variant="danger">{error}</Alert>}
+
             <Form onSubmit={handleSignup}>
               {/* Username Field */}
               <Form.Group controlId="username" className="mb-3">
@@ -91,7 +91,7 @@ function Signup() {
               <Button variant="primary" type="submit" className="w-100 mb-3">
                 Signup
               </Button>
-
+              {error && <Alert variant="danger">{error}</Alert>}
               {/* Signin Link */}
               <div className="text-center">
                 <p className="text-muted">
